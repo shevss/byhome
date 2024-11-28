@@ -1,0 +1,34 @@
+
+.background-container {
+  position: fixed; /* Fixes the container to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  /* z-index: -1;  */
+}
+.background-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../assets/bg.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3; /* Adjust the transparency here (0 = fully transparent, 1 = fully opaque) */
+  z-index: -1; /* Make sure the pseudo-element is behind the content */
+}
+.mat-tab-label {
+  font-size: 18px; /* Adjust the size as needed */
+}
+/* .background-container {
+    background-image: url("../../assets/bg.JPG");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    height: 100vh; 
+  } */

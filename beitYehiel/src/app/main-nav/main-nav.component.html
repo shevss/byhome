@@ -1,0 +1,156 @@
+<div class="background-container">
+    <mat-toolbar color="primary"
+        style="margin-top: 30px;background-color: rgb(252, 244, 232);font-weight: bold;font-size: xx-large;"
+        class="mat-elevation-z">
+        <mat-label style="margin-right:30%;">בית הדין לענייני ממונות הוקם על ידי הרב הגאון הרב
+            חנוך פרידמן שליט"א</mat-label>
+    </mat-toolbar>
+    <mat-card style="margin-top: 30PX;background-color: transparent;">
+        <mat-card-content style="margin-right: 38%; font-weight: bolder;font-size: x-large;">
+            <p>
+                בית הדין מתמחה בכל עניין הקשור לדיני ממונות.
+
+            </p>
+            <p>
+                לדוגמא:הלכות שכנים ונזקי שכנים, נזקי גוף וממון
+            </p>
+            <p>
+                ירושות
+                וצוואות, הלכות פועלים, דיני תיווך ושדכנות ועוד.
+            </p>
+
+            <p>
+                <br />
+            </p>
+
+            <p>
+                בית הדין דן על פי חוקי הבוררות.
+            </p>
+            <p>
+                ולכן צריך את הסכמת שני הצדדים לדיון
+            </p>
+            <p>
+                וכמו כן חייבים הצדדים לחתום על שטר
+
+                בוררות .
+            </p>
+        </mat-card-content>
+    </mat-card>
+
+
+    <mat-accordion  >
+        <mat-expansion-panel style="background-color: rgb(252, 244, 232);width: 20%; margin-right: 40%;margin-top: 30px;">
+            <mat-expansion-panel-header>
+                <mat-panel-title style="font-weight: bold;font-size: x-large;">
+                    הרכב הדיינים
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <p style="font-size: larger">
+                אב בית הדין הרב חנוך פרידמן שליט"א
+            </p>
+            <p style="font-size: larger">
+                הרה"ג הרב שלמה זעפרני שליט"א
+            </p>
+            <p style="font-size: larger">
+                הרה"ג הרב שמואל רוזנבאום שליט"א
+            </p>
+
+        </mat-expansion-panel >
+
+        <mat-expansion-panel style="background-color: rgb(252, 244, 232);width: 20%; margin-right: 40%;" (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title style="font-weight: bold;font-size: x-large;">
+                    שעות פעילות
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p style="font-size: larger">
+                שעות פעילות בית הדין פעם בשבוע בימי שלישי או בימי
+
+                רביעי בין השעות 20:30-22:00
+            </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel style="background-color: rgb(252, 244, 232);width: 20%; margin-right: 40%;" (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title style="font-weight: bold;font-size: x-large;">
+                    כתובת
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p style="font-size: larger">
+                מיקום בית הדין בהר נוף ברחוב שאולזון 54 ירושלים
+            </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel style="background-color: rgb(252, 244, 232);width: 20%; margin-right: 40%;" (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title style="font-weight: bold;font-size: x-large;">
+                    יצירת קשר
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p style="font-size: larger">
+                ליצירת קשר עם מזכירות בית הדין
+
+
+            </p>
+            <p style="font-size: larger">
+                הרב רון נייהוז
+
+            </p>
+            <p style="font-size: larger">
+                פלאפון: 054-8484857
+
+            </p>
+            <p style="font-size: larger">
+                אימייל: NRON1976&#64;GMAIL.COM
+            </p>
+        </mat-expansion-panel>
+    </mat-accordion>
+    <!-- <mat-tab-group color="primary"
+            style="background-color: rgb(189, 222, 252);font-size: larger;font-weight: bold;">
+
+            <mat-tab label="הרכב הדיינים ">
+                <p>
+                    אב בית הדין הרב חנוך פרידמן שליט"א
+                </p>
+                <p>
+                    הרה"ג הרב שלמה זעפרני שליט"א
+                </p>
+                <p>
+                    הרה"ג הרב שמואל רוזנבאום שליט"א
+                </p>
+            </mat-tab>
+            <mat-tab label="כתובת">
+                <p>
+                    מיקום בית הדין בהר נוף ברחוב שאולזון 54 ירושלים
+                </p>
+            </mat-tab>
+            <mat-tab label="שעות פעילות">
+                <p>
+                    שעות פעילות בית הדין פעם בשבוע בימי שלישי או בימי
+
+                    רביעי בין השעות 20:30-22:00
+                </p>
+            </mat-tab>
+            <mat-tab label="יצירת קשר">
+                <p>
+                    ליצירת קשר עם מזכירות בית הדין
+
+
+                </p>
+                <p>
+                    הרב רון נייהוז
+
+                </p>
+                <p>
+                    פלאפון: 054-8484857
+
+                </p>
+                <p>
+                    אימייל: NRON1976&#64;GMAIL.COM
+                </p>
+            </mat-tab>
+        </mat-tab-group> -->
+
+</div>
